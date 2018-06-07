@@ -41,7 +41,7 @@ for e in range(episodes):
                 print("episode: {}/{}, score: {}".format(e, episodes, time_t))
                 break
 
-        agent.train(32)
+        agent.train(1)
 
         if(e%100==0):
             agent.save_model()
