@@ -21,7 +21,6 @@ def normalize(obs):
     return [(obs[i] - lower_bounds[i]) / (upper_bounds[i] - lower_bounds[i]) for i in range(len(obs))]
 
 
-
 for e in range(episodes):
         state = env.reset()
         next_state = normalize(state)
